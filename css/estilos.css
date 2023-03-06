@@ -1,0 +1,82 @@
+.remove{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.remove2{
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+}
+
+.contenedor{
+    display:flex;
+    justify-content: center;
+    padding:15px;
+}
+
+.contenedor img{
+    width:70px;
+    height:70px;
+}
+h1{
+    color:blue;
+}
+p{
+    color:white;
+    background-color: crimson;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: auto 313px;
+    text-align: center;
+}
+
+.color{
+    color:#f07167;
+}
+
+.link:link{
+    color:#fb8500;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: #219ebc;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:#8ecae6;
+    text-decoration: underline;
+}
+
+.link:active{
+    color: #023047;
+    text-decoration: underline;
+}
+
+.boton:link, .boton:visited{
+    background-color: #b5179e;
+    color:white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton:hover, .boton:active{
+    background-color: #f72585;
+}
+
+.ordenar{
+    list-style: none;
+    counter-reset: contador;
+}
+.ordenar li{
+    counter-increment: contador;
+}
+.ordenar li::before{
+    content:'Curso' counter(contador) ') ';
+    color:#ff6f00;
+}
+
+.ordenar li::after{
+    content: '.';
+}
